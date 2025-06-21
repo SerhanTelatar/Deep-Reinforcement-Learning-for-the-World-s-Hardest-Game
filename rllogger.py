@@ -1,4 +1,3 @@
-# rl_logger.py
 import numpy as np
 
 class RLLogger:

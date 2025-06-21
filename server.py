@@ -1,4 +1,3 @@
-# server.py
 import asyncio
 import websockets
 import json
@@ -53,10 +52,8 @@ async def handler(websocket):
             else:
                 prev_player_pos = player_pos
 
-            # --- ***BURAYA EKLE*** ---
             cumulative_reward += reward
             episode_length += 1
-            # ------------------------
 
             observe(state, reward, done)
             action = get_action(state)
@@ -67,14 +64,14 @@ async def handler(websocket):
                 logger.summary()
                 cumulative_reward = 0
                 episode_length = 0
-                print(f"Episode bitti, yeni oyun bekleniyor.")
+                print(f"Episods finished, waiting for new game.")
                 
         except websockets.ConnectionClosed:
-            print("Bağlantı koptu.")
+            print("Disconnected from RL-Agent")
             break
 
 async def main():
-    print(f"WebSocket RL sunucu başlatıldı: ws://localhost:{WS_PORT}")
+    print(f"WebSocket RL server is running on: ws://localhost:{WS_PORT}")
     async with websockets.serve(handler, "localhost", WS_PORT):
         await asyncio.Future()
 
