@@ -94,6 +94,10 @@ content: |
       ```bash
       pip install websockets numpy torch matplotlib
       ```
+      or
+      ```bash
+      pip install -r requirements.txt
+      ```
 
   ---
 
@@ -158,4 +162,3 @@ content: |
   * **Serhan Emre Telatar**
       * Project Title: Deep Reinforcement Learning for the World's Hardest Game
 
-  ---s
