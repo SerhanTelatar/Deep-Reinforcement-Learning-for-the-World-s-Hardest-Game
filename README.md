@@ -1,9 +1,4 @@
 
----
-
-## README.md (TÜRKÇE)
-
-```markdown
 # World’s Hardest Game için Deep Reinforcement Learning
 
 ![Oyun Ekranı](demo_screenshot.png)
