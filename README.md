@@ -1,5 +1,5 @@
-file_name: README.md
-content: |
+[![Demo Video](https://img.youtube.com/vi/CV8SKutlZoE/hqdefault.jpg)](https://www.youtube.com/watch?v=HlpEgIqo2qI)
+
   # World's Hardest Game RL + Manual
 
   This project implements a version of "The World's Hardest Game," allowing both **manual control** and **Reinforcement Learning (RL) agent control** using a Deep Q-Network (DQN). The game environment is built with HTML, CSS, and JavaScript, while the RL agent runs on a Python backend, communicating via WebSockets.
