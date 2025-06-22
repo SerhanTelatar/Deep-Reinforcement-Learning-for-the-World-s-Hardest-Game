@@ -18,7 +18,7 @@ def distance(pos, end_zone):
 
 async def handler(websocket):
     global prev_player_pos
-    print("RL-Agent: JS ile bağlantı kuruldu")
+    print("RL-Agent: Connection established with JS.")
     
     cumulative_reward = 0
     episode_length = 0
@@ -42,7 +42,7 @@ async def handler(websocket):
             if delta > 0:
                 reward += 0.2
             else:
-                reward -= 0.4
+                reward -= 0.5
             if done:
                 if data.get("reward", 0) >= 100:
                     reward = 100

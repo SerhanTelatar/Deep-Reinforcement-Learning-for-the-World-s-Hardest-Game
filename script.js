@@ -186,7 +186,7 @@
         };
         ws.onclose = () => {
             AIcontrol = false;
-            instText.innerHTML = "Klavye ile oyna<br>RL-Agent bağlantısı kesildi";
+            instText.innerHTML = "Play with keyboard<br>RL-Agent disconnected";
             setTimeout(connectWebSocket, 2000);
         };
         ws.onerror = err => console.error("WebSocket error:", err);
@@ -202,7 +202,7 @@
         // WebSocket onmessage is inside when AI action is received:
         ws.onmessage = function(event) {
             AIcontrol = true;
-            instText.innerHTML = "AI (RL-Agent) aktif!<br>İnsan kontrolü devre dışı.";
+            instText.innerHTML = "AI (RL-Agent) active!<br>Human control disabled.";
             const action = JSON.parse(event.data);
             let collisionOrGoal = false;
 
