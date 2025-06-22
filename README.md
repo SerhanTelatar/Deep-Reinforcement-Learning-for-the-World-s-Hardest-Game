@@ -1,4 +1,4 @@
-[![Demo Video](https://img.youtube.com/vi/CV8SKutlZoE/hqdefault.jpg)](https://www.youtube.com/watch?v=HlpEgIqo2qI)
+[![Demo Video](https://img.youtube.com/vi/HlpEgIqo2qI/hqdefault.jpg)](https://www.youtube.com/watch?v=HlpEgIqo2qI)
 
   # World's Hardest Game RL + Manual
 
